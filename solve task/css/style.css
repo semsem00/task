@@ -260,10 +260,10 @@ margin-left: 10px;
 /*-------------------------------------------------------------------------------------------------*/
 /*_____________________________________________side right icon_____________________________________*/
 /*-------------------------------------------------------------------------------------------------*/
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1200px) {
   .sec3{
       flex-wrap: wrap;
-    margin: 10px 100px;
+    margin: 10px ;
   }
   .navbar{
       width: 80%;
@@ -281,3 +281,30 @@ margin-left: 10px;
     margin-right: 20px
   }
 }
+
+@media only screen and (max-width: 1138px) {
+    .sec3{
+        flex-wrap: wrap;
+       margin: 10px 100px;
+    }
+    .sec2{
+        flex-wrap: wrap;
+        
+    }
+    .navbar{
+        justify-content: space-around;
+    }
+    .rightNav{
+      width: 30%
+    }
+    .right-side-icon{
+    display: none;
+    }
+    .rightNav a{
+      margin-right: 20px
+    }
+    .rightNav input{
+        margin: 5px;
+    }
+  }
+  
