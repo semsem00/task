@@ -1,0 +1,232 @@
+*{
+box-sizing: border-box;
+}
+body{
+    background-color: #f0f5f8;   
+}
+.navbar{
+    background: linear-gradient(90deg, #0080FF 250px, #0080FF);
+    color: #ffffff; 
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    z-index: 1000;
+    /* height: 3.125rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+       
+}
+
+.leftNav{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo{
+background-image: url("../images/logo1.svg");
+background-repeat: no-repeat;
+height: 3.125rem;
+background-position: center center ;
+width: 50px ;
+margin-left: 10px;
+}
+
+
+ .icon {
+    margin:0 10px;
+}
+.rightNav{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.rightNav input{
+    border-color: transparent;
+    padding: 1px 0.625rem;
+    color: #667088;
+    border-radius: 15px;
+    height: 2rem;
+
+}
+.calender{
+    padding: 5px;
+}
+.calender span{
+    padding: 5px ;
+}
+.user{
+    text-decoration: none;
+    border: 1px solid #fff;
+    background-color: #a0c3a0;
+    padding: 5px;
+    border-radius: 50%;
+    color: #ffffff;
+}
+#toggel,.icon{
+    font-size: 1.875rem;
+    color: #ffffff;
+    width: 100%;
+}
+
+/* left side menue */ 
+.sec2{
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+.side{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sideMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.sideMenu .icons, .extraIcon{
+    list-style-type: none;
+   padding: 0;
+}
+.sideMenu .icons li{
+   margin: 5px;
+   padding: 10px;
+   background-color: #ffffff;
+   border: 1px solid transparent;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+
+}
+.sideMenu .icons li a{
+    text-decoration: none;
+
+}
+.sideMenu .icons li i{
+    font-size:1.5625rem ;
+     color: #0080ff;
+     margin: auto;
+}
+.toggel-sub-menu{
+    display: flex;
+    justify-content: space-around;
+}
+.sideMenu .icons li .arrow-right i{
+    font-size: 15px;
+    color:#667088;
+}
+
+.extraIcon li {
+    background-color: #e7ebf3;   
+    margin: 0 15px;
+    padding: 8px;
+}
+.extraIcon li a{
+    text-decoration: none;
+    padding: 0;
+    color: #ff1066;
+    cursor: pointer;
+   
+}
+.toggel-menue {
+   padding: 5px;
+}
+/**/
+.project{
+    background: #ffffff;
+    cursor: pointer;
+    
+}
+
+.head-project{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    margin: 10px;
+    padding: 10px;
+}
+.head-project-name i{
+ color:#b7bdc5;
+}
+.head-project-name h2{
+    display: inline;
+    padding-left: 10px;
+    color:#0080FF;
+}
+
+.head-project-icons a{
+    text-decoration: none;
+    color: #667088;
+    padding: 10px;
+}
+
+.head-project-icons .colse{
+    color: #dde0ee;
+}
+.project-body thead th{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    color: #334055;
+}
+
+.project-body tbody td{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/**/
+.cards{
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+  
+}
+.card-item{
+    margin: auto;
+    border:1px solid transparent;
+    padding: 10px;
+    margin: 10px;
+    color:#fff;
+    border-radius: 10px;
+    
+}
+
+.bg-blue{background: linear-gradient( #98C4F3 , #56AEF8); }
+
+.bg-pivot{ background: linear-gradient( 45deg , rgba(221,16,153,0.75), rgba(167,54,194,0.75)); }
+
+.bg-green{background: linear-gradient( 45deg , rgba(0,224,153,0.75), rgba(95,224,139,0.75));}
+/**/
+.sec3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
+}
+/**/
+.right-side-icon{
+    position: fixed;
+    top:55px;
+    right: 10px;
+}
+.right-side-icon ul{
+    list-style-type: none;
+}
+.right-side-icon ul li{
+    padding: 10px;
+}
+.right-side-icon ul i{
+    font-size: 1.6rem;
+    color: #667088;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!---------------------------------------------------------------------------------------------->
+<!--______________________________________________NavBar______________________________________-->
+<!---------------------------------------------------------------------------------------------->
+    <nav class="navbar"> 
+        <div class="leftNav">
+         <div class="logo"><a href="#"></a></div>
+          <div>
+               <a href="#"><i class="fas fa-calendar-day icon"></i> </a>
+          </div>
+           <div class="calender">
+              <span id="time"></span>
+              <span>No upadate meeting</span><br>
+              <span id="Date"></span>
+              
+           </div>
+        </div>
+        <div class="rightNav">
+         <input type="search" placeholder="Search everything" id="searchInp"/>
+         <a href="#" class="user">EA</a>
+        <div>
+              <a href="#"><i class="fas fa-bars" id="toggel"></i></a>
+        </div>
+        </div>
+    </nav>
+<!------------------------------------------------------------------------------------------------->
+<!--_____________________________________________Side Menwe______________________________________-->
+<!------------------------------------------------------------------------------------------------->
+        <div class="sec2">
+           <div class="side">
+                <div class="sideMenu">
+                   <div>
+                        <ul class="icons">
+                            <li> <a class="toggel-sub-menu">
+                            <i class="material-icons">dashboard</i>
+                            <span class="arrow-right"><i class="fas fa-chevron-right "></i></span> </a></li>
+                            <li> <a class="toggel-sub-menu">
+                                <i class="fas fa-project-diagram"></i>
+                                <span class="arrow-right"><i class="fas fa-chevron-right "></i></span>
+                             </a></li>
+                            <li> <a class="toggel-sub-menu">
+                                <i class="fas fa-clipboard-check"></i>
+                                <span class="arrow-right"><i class="fas fa-chevron-right "></i></span>
+                             </a></li>
+                            <li> <a><i class="fas fa-list"></i> </a></li>
+                            <li> <a><i class="fab fa-dropbox"></i> </a></li>
+                            <li> <a><i class="far fa-object-group"></i> </a></li>
+                            <li><a><i class="fas fa-bolt"></i></a></li>
+                                 
+                        </ul>
+                   </div>
+                
+                    <div>
+                        <ul class="extraIcon">
+                            <li><a><i class="fas fa-user-plus"></i></a></li>
+                            <li><a><i class="material-icons">exit_to_app</i></a></li>
+                            <li><a><i class="fas fa-info-circle"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="toggel-menue"><a><i class="fas fa-chevron-right"></i></a></div>
+           </div>
+
+            <div class="project">
+                <div class="head-project">
+                    <div class="head-project-name">
+                        <i><i class="fas fa-project-diagram"></i></i>
+                        <h2>My Projects</h2>
+                    </div>
+                    <div class="head-project-icons">
+                        <span><a onclick="deleteRow('dataTable');" id='delete-row'><i class="fas fa-trash"></i></a></span>
+                        <span><a onclick="update();" id='edit'><i class="fas fa-pen"></i></a></span>
+                        <span><a  id='closed'><i class="fas fa-times colse"></i></a></span>
+                    </div>
+                    </div>
+                    <div class="project-body">
+                        <table id="tableId">
+                            <thead>
+                               <tr>
+                                    <th><i class="fas fa-check"></i></th>
+                                    <th>NAME</th>
+                                    <th>PERIORTY</th>
+                                    <th>INDECATOR</th>
+                                    <th>%DONE</th>
+                                    <th>SPENT TIME</th>
+                               </tr>
+                                
+                            </thead>
+                           
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td id='name'>stratigic Name</td>
+                                    <td id="priority">stratigic</td>
+                                    <td id="indecator"><input type="radio"/></td>
+                                    <td id='done'><progress value="100"></progress></td>
+                                    <td id='spentTime'>0.00h</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td>stratigic Name</td>
+                                    <td>stratigic</td>
+                                    <td><input type="radio"></td>
+                                    <td><progress value="100"></progress></td>
+                                    <td>0.00h</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td>stratigic Name</td>
+                                    <td>stratigic</td>
+                                    <td><input type="radio"/></td>
+                                    <td><progress value="100"></progress></td>
+                                    <td>0.00h</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td>stratigic Name</td>
+                                    <td>high</td>
+                                    <td><input type="radio"/></td>
+                                    <td><progress value="100"></progress></td>
+                                    <td>0.00h</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td>stratigic Name</td>
+                                    <td>high</td>
+                                    <td><input type="radio"/></td>
+                                    <td><progress value="0"></progress></td>
+                                    <td>0.00h</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td>stratigic Name</td>
+                                    <td>high</td>
+                                    <td><input type="radio"/></td>
+                                    <td><progress value="0"></progress></td>
+                                    <td>0.00h</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td>stratigic Name</td>
+                                    <td>high</td>
+                                    <td><input type="radio"/></td>
+                                    <td><progress value="0"></progress></td>
+                                    <td>0.00h</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td>stratigic Name</td>
+                                    <td>high</td>
+                                    <td><input type="radio"/></td>
+                                    <td><progress value="0"></progress></td>
+                                    <td>0.00h</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" class="check"/></td>
+                                    <td>stratigic Name</td>
+                                    <td>high</td>
+                                    <td><input type="radio"/></td>
+                                    <td><progress value="0"></progress></td>
+                                    <td>0.00h</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+     
+            </div>
+          <div class="sec3">
+                <div class="cards">
+                    <div class="card-item bg-blue">
+                        <h4>Project revenues last 3 days</h4>
+                        <h3>£ 0</h3>
+                        <span>0.00%</span><br>
+                        <span>vs.Pervious period</span>
+                    </div>
+                    <div class="card-item bg-green">
+                     <h4>Wage expenses last 3 days</h4>
+                     <h3>5.28k</h3>
+                     <span>0.00%</span><br>
+                     <span>vs.Pervious period</span>
+                 </div>
+                 <div class="card-item bg-pivot">
+                     <h4>Purchases last 30 days</h4>
+                     <h3>£ 0</h3>
+                     <span>0.00%</span><br>
+                     <span>vs.Pervious period</span>
+                 </div>
+                  </div>
+                 <div>
+                    <div class="head-project">
+                        <div class="head-project-name">
+                            <i><i class="fas fa-project-diagram"></i></i>
+                            <h2>Tasks after due date(chart)(381)</h2>
+                        </div>
+                        <div class="head-project-icons">
+                            <span><a><i class="fas fa-trash"></i></a></span>
+                            <span><a><i class="fas fa-pen"></i></a></span>
+                            <span><a><i class="fas fa-times colse"></i></a></span>
+                        </div>
+                    </div>
+                      <div id="chartContainer" style="height: 350px; width: 100%;"></div>
+                 </div>
+          </div>
+        </div>
+       
+            
+        <!-- <div id="donar_popup">
+            <div class="edge_popup container py-4">
+              <div class="about_donar_section text-center">
+                <h3 class="text-uppercase text-white">donar blood</h3>
+              </div>
+      
+                <div class="form-group">
+                  <input type="email" id="EmailInput" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <input type="text" id="MobInput" class="form-control" id="exampleFormControlInput1" placeholder="ex.01XX XXX XXXX">
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a id="SubBtn" class="btn btn-danger">Submit</a>
+                </div>
+             
+            </div>
+          </div> -->
+           
+             <div class="right-side-icon">
+                  <ul>
+                      <li><a><i class="fas fa-flag"></i></a></li>
+                      <li><a><i class="far fa-lightbulb"></i></a></li>
+                      <li><a><i class="material-icons">playlist_add_check</i></a></li>
+                      <li><a><i class="fas fa-stopwatch"></i></a></li>
+                  </ul>
+             </div>
+ 
+           
+                     
+       
+   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>
