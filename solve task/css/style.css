@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *{
 box-sizing: border-box;
 }
 body{
-    background-color: #f0f5f8;   
+    background-color: #f0f5f8;
+    font-family: 'Ubuntu', sans-serif   
 }
+/*-------------------------------------------------------------------------------------------------*/
+/*_____________________________________________navbar______________________________________________*/
+/*-------------------------------------------------------------------------------------------------*/
 .navbar{
     background: linear-gradient(90deg, #0080FF 250px, #0080FF);
     color: #ffffff; 
@@ -23,7 +28,7 @@ body{
 
 .leftNav{
     display: flex;
-    width: 50%;
+    /* width: 50%; */
     justify-content: flex-start;
     align-items: center;
 }
@@ -32,26 +37,31 @@ background-image: url("../images/logo1.svg");
 background-repeat: no-repeat;
 height: 3.125rem;
 background-position: center center ;
-width: 50px ;
+width: 40px ;
 margin-left: 10px;
 }
 
 
- .icon {
-    margin:0 10px;
+ .cal {
+   margin-left: 20px;
+   font-size: 25px;
+   color: #fff;
+
 }
 .rightNav{
-    width: 35%;
+    width: 25%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .rightNav input{
     border-color: transparent;
     padding: 1px 0.625rem;
     color: #667088;
     border-radius: 15px;
     height: 2rem;
+    /* margin: 0 10px; */
 
 }
 .calender{
@@ -68,7 +78,7 @@ margin-left: 10px;
     border-radius: 50%;
     color: #ffffff;
 }
-#toggel,.icon{
+#toggel{
     font-size: 1.875rem;
     color: #ffffff;
     width: 100%;
@@ -87,7 +97,9 @@ margin-left: 10px;
     justify-content: flex-start;
     align-items: center;
 }
-
+/*-------------------------------------------------------------------------------------------------*/
+/*_____________________________________________side menu______________________________________________*/
+/*-------------------------------------------------------------------------------------------------*/
 .sideMenu{
     display: flex;
     flex-direction: column;
@@ -141,7 +153,9 @@ margin-left: 10px;
 .toggel-menue {
    padding: 5px;
 }
-/**/
+/*-------------------------------------------------------------------------------------------------*/
+/*_____________________________________________table project_______________________________________*/
+/*-------------------------------------------------------------------------------------------------*/
 .project{
     background: #ffffff;
     cursor: pointer;
@@ -159,6 +173,7 @@ margin-left: 10px;
 .head-project-name i{
  color:#b7bdc5;
 }
+
 .head-project-name h2{
     display: inline;
     padding-left: 10px;
@@ -186,7 +201,15 @@ margin-left: 10px;
     border-bottom: 1px solid #ddd;
 }
 
-/**/
+/*-------------------------------------------------------------------------------------------------*/
+/*_____________________________________________cards______________________________________________*/
+/*-------------------------------------------------------------------------------------------------*/
+.sec3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
 .cards{
     display: flex;
     flex-wrap: wrap; 
@@ -208,17 +231,14 @@ margin-left: 10px;
 .bg-pivot{ background: linear-gradient( 45deg , rgba(221,16,153,0.75), rgba(167,54,194,0.75)); }
 
 .bg-green{background: linear-gradient( 45deg , rgba(0,224,153,0.75), rgba(95,224,139,0.75));}
-/**/
-.sec3{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap
-}
-/**/
+
+/*-------------------------------------------------------------------------------------------------*/
+/*_____________________________________________side right icon_____________________________________*/
+/*-------------------------------------------------------------------------------------------------*/
 .right-side-icon{
     position: fixed;
     top:55px;
-    right: 10px;
+    right: 3px;
 }
 .right-side-icon ul{
     list-style-type: none;
@@ -229,4 +249,35 @@ margin-left: 10px;
 .right-side-icon ul i{
     font-size: 1.6rem;
     color: #667088;
+}
+
+.bg-white{
+    padding: 0;
+    margin-right: 50px;
+    background-color: #fff;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*_____________________________________________side right icon_____________________________________*/
+/*-------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 992px) {
+  .sec3{
+      flex-wrap: wrap;
+    margin: 10px 100px;
+  }
+  .navbar{
+      width: 80%;
+  }
+  .navbar{
+      justify-content: space-around;
+  }
+  .rightNav{
+    width: 30%
+  }
+  .right-side-icon{
+  right: 100px;
+  }
+  .rightNav a{
+    margin-right: 20px
+  }
 }
